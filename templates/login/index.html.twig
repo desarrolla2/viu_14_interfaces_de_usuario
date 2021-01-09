@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+  <div class="container">
+    <div class="app-login">
+      <div class="row">
+        <div class="col-sm-6 hidden-xs text-right">
+          <img src="{{ asset('img/login/mobile_devices.png') }}">
+        </div>
+        <div class="col-sm-6">
+          <div class="login-box text-center">
+            <img class="logo" src="{{ asset('img/logo.png') }}">
+            <p>This is the most awesome app to share and evaluate your food.</p>
+            <p>Only available for instagram users.</p>
+            <a href="{{ path('timeline') }}" class="btn btn-primary">Log in with Instagram <i
+                  class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

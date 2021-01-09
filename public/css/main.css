@@ -1,0 +1,110 @@
+body {
+    background-color: #fafafa;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #808080;
+    border-color: #1e1e1e;
+    background-image: linear-gradient(to bottom, #808080 0, #1e1e1e 100%);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #1e1e1e;
+    border-color: #808080;
+    background-image: linear-gradient(to bottom, #1e1e1e 0, #3b3b3b 100%) !important;
+}
+
+.app-login {
+    margin-top: 120px;
+}
+
+.app-login .login-box {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    width: 340px;
+    height: 600px;
+    padding: 40px;
+}
+
+.app-login .login-box .logo {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.app-login .login-box p {
+    margin-bottom: 40px;
+}
+
+.navbar .navbar-brand .logo {
+    width: 84px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #262626;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #7f7c7c;
+}
+
+.navbar .navbar-form {
+    margin-right: 60px;
+}
+
+.navbar .navbar-form input[type="text"] {
+    width: 300px;
+}
+
+.thumbnail .thumbnail-footer {
+    padding: 10px 5px 5px 5px;
+}
+
+.thumbnail .thumbnail-footer .profile-name {
+    font-weight: bold;
+}
+
+.thumbnail .thumbnail-footer .profile-image {
+    width: 35px;
+}
+
+.app-upload-image {
+    margin-top: 100px;
+}
+
+.app-upload-image .btn {
+    margin-top: 20px;
+}
+
+.app-edit-image .app-image {
+    max-width: 80%;
+    margin: auto;
+}
+
+.app-edit-image .app-filter {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.app-edit-image .app-filter img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.app-edit-image .app-process {
+    text-align: center;
+}
+
+.app-view-image .highcharts-figure {
+    margin-bottom: 10px;
+}
+
+.flash.flash-message {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #262626;
+}

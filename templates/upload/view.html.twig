@@ -1,0 +1,43 @@
+{% extends 'layout.html.twig' %}
+{% block flash %}
+  <div class="flash flash-message">
+    Ya hemos analizado tu foto, aquí tienes los resultados
+  </div>
+{% endblock %}
+{% block content %}
+  <div class="app-view-image">
+    <div class="row">
+      <div class="col-sm-7">
+        <figure class="highcharts-figure">
+          <div id="highcharts-container-1"></div>
+        </figure>
+        <figure class="highcharts-figure">
+          <div id="highcharts-container-2"></div>
+        </figure>
+      </div>
+      <div class="col-sm-5">
+        <div class="thumbnail">
+          <img src="{{ asset('img/food/16.jpg') }}" class="img-fluid">
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="{{ path('view') }}" class="btn btn-primary btn-block">
+              <i class="fa fa-fw fa-share-alt"></i> Compartir
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="{{ path('view') }}" class="btn btn-danger btn-block">
+              <i class="fa fa-fw fa-trash"></i> Eliminar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block javascripts %}
+  {{ parent() }}
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="{{ asset('js/view.js') }}"></script>
+{% endblock %}

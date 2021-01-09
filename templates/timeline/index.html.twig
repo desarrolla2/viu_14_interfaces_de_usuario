@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8">
+      {% for photo_id in 1..5 %}
+        {% set image_id = '0'~photo_id %}
+        {% set name_id = photo_id %}
+        {% set photo_id = '0'~photo_id %}
+        {% include 'timeline/index.item.html.twig' %}
+      {% endfor %}
+    </div>
+    <div class="col-sm-4">
+      {% for photo_id in 6..9 %}
+        {% set image_id = '0'~photo_id %}
+        {% set name_id = photo_id %}
+        {% set photo_id = '0'~photo_id %}
+        {% include 'timeline/index.item.html.twig' %}
+      {% endfor %}
+      {% for photo_id in 10..16 %}
+        {% set image_id = '0'~(photo_id-9) %}
+        {% set name_id = (photo_id-9) %}
+        {% set photo_id = photo_id %}
+        {% include 'timeline/index.item.html.twig' %}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

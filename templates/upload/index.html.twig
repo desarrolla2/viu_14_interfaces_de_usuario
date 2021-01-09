@@ -1,0 +1,12 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+  <div class="app-upload-image">
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+    {{ form_row(form.image) }}
+    <button type="submit" class="btn btn-primary">
+      <i class="fa fa-fw fa-plus-circle"></i> Subir
+    </button>
+    {{ form_end(form) }}
+  </div>
+{% endblock %}

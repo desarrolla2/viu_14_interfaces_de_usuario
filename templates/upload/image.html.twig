@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+  <div class="app-edit-image">
+    <div class="app-image">
+      <div class="thumbnail">
+        <img src="{{ asset('img/food/09.jpg') }}" class="img-fluid">
+      </div>
+    </div>
+    <div class="app-filter">
+      <div class="well well-sm"><strong>Selecciona el filtro que más te guste</strong></div>
+      <div class="row">
+        {% for name, class in filters %}
+          <div class="col-sm-2 col-xs-6">
+            <span>{{ name }}</span>
+            <img src="{{ asset('img/food/09.jpg') }}" class="{{ class }}">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="app-process">
+      <a href="{{ path('view') }}" class="btn btn-primary btn-block">Analizar mi comida ahora</a>
+    </div>
+  </div>
+{% endblock %}
